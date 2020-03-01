@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Maker</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body id="app">
+    <div class="container">
+        <h1>CV Maker</h1>
+        <div class="form-deck">
+            <h3>Your Informations :</h3>
+            <div class="form-group">
+                <label>Full Name :</label>
+                <input type="text" id="full_name">
+            </div>
+            <div class="form-group">
+                <label>Email Address :</label>
+                <input type="email" id="email_address">
+            </div>
+            <div class="form-group">
+                <label>Website :</label>
+                <input type="url" id="website">
+            </div>
+            <div class="form-group">
+                <label>Phone Number :</label>
+                <input type="tel" id="phone_number">
+            </div>
+            <div class="form-group">
+                <label>Location Address :</label>
+                <input type="text" id="location_address">
+            </div>
+        </div>
+        <div class="form-deck with_list">
+            <h3>Your Experinces :</h3>
+            <div class="form-side">
+                <div class="form-group">
+                    <label>Place :</label>
+                    <input type="text" id="experience_place">
+                </div>
+                <div class="form-group">
+                    <label>Date :</label>
+                    <input type="text" id="experience_date">
+                </div>
+                <div class="form-group">
+                    <label>Center :</label>
+                    <input type="text" id="experience_center">
+                </div>
+                <div class="form-group">
+                    <button id="experience_add"><span class="plus-icon">+</span>ADD</button>
+                </div>
+            </div>
+            <div class="list-side">
+                <table CELLSPACING=0>
+                    <thead>
+                        <tr>
+                            <th>Place</th>
+                            <th>Date</th>
+                            <th>Center</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="experiences_table"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="form-deck">
+            <h3>Your Skills :</h3>
+            <div class="form-group">
+                <label>Skill :</label>
+                <input type="text" id="skill">
+            </div>
+            <div class="bullet-list" id="skills-list">
+                <div class="item" hidden><span class="close-icon">X</span>Default</div>
+            </div>
+        </div>
+        <div class="form-deck with_list">
+            <h3>Your Formations :</h3>
+            <div class="form-side">
+                <div class="form-group">
+                    <label>Type :</label>
+                    <input type="text" id="formation_type">
+                </div>
+                <div class="form-group">
+                    <label>Date :</label>
+                    <input type="text" id="formation_date">
+                </div>
+                <div class="form-group">
+                    <label>Place :</label>
+                    <input type="text" id="formation_place">
+                </div>
+                <div class="form-group">
+                    <button id="formation_add"><span class="plus-icon">+</span>ADD</button>
+                </div>
+            </div>
+            <div class="list-side">
+                <table CELLSPACING=0>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Date</th>
+                            <th>Place</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="formations_table"></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="form-deck">
+            <h3>Your Hobbies :</h3>
+            <div class="form-group">
+                <label>Hobbie :</label>
+                <input type="text" id="hobbie">
+            </div>
+            <div class="bullet-list" id="hobbies-list">
+                <div class="item" hidden><span class="close-icon">X</span>Default</div>
+            </div>
+        </div>
+        <div class="action">
+            <button id="create_cv">Create CV</button>
+        </div>
+    </div>
+
+    <script type="module" src="./src/app.js"></script>
+</body>
+
+</html>

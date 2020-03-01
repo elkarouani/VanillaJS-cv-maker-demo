@@ -1,0 +1,230 @@
+@font-face {
+    src: url('../fonts/Montserrat-Regular.ttf');
+    font-family: "Montserrat";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: .8vw;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgb(189, 209, 233);
+}
+   
+body::-webkit-scrollbar-thumb {
+    background: rgba(89, 18, 212, 0.66); 
+    border-radius: 10px;
+}
+
+h1 {
+    padding: 1em 0;
+    text-align: center;
+    border: 3px solid rgb(78, 60, 216);
+    color: rgb(127, 115, 221);
+    width: 30%;
+    margin: 1em auto;
+    border-radius: 10px;
+}
+
+.form-deck {
+    padding: 1em 0;
+    text-align: center;
+}
+
+.form-deck h3 {
+    text-align: center;
+    border-bottom: 2px solid rgb(127, 115, 221);
+    color: rgb(78, 60, 216);
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: .4em;
+    margin-bottom: 1em;
+}
+
+.form-deck .bullet-list {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.form-deck .bullet-list .item {
+    border: 1px solid rgb(78, 60, 216);
+    margin-right: 1em;
+    margin-bottom: .5em;
+    padding: .2em 1.3em;
+    border-radius: 13px;
+    color: rgb(140, 17, 197);
+    animation: show-element .5s forwards;
+}
+
+.form-deck .bullet-list .close-icon {
+    padding-right: 1em;
+    font-size: .8rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.form-group label {
+    padding-bottom: .3em;
+    color: rgb(140, 17, 197);
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 20%;
+    border: none;
+    border-bottom: 1px solid #A9A9A9;
+    padding-bottom: .3em;
+    color: rgb(78, 60, 216);
+    text-align: center;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-bottom: 1px solid rgb(78, 60, 216);
+    transition: all 1s ease-in-out;
+}
+
+.form-deck.with_list {
+    display: grid;
+    grid-template: 20% 80% / 40% 60%;
+}
+
+.form-deck.with_list h3 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.form-deck.with_list .form-side {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.form-deck.with_list .form-side input {
+    width: 60%;
+}
+
+.form-deck.with_list .form-side button {
+    border: none;
+    color: #8C11C5;
+    margin-top: 1em;
+    padding: .3em 1.5em;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: -3px -3px 7px #a7a6a673, 3px 3px 5px rgba(94, 104, 121, .288);
+    transition: all .5s ease-in ;
+}
+
+.form-deck.with_list .form-side button:hover {
+    border: none;
+    color: white;
+    background-color: #8C11C5;
+}
+
+.form-deck.with_list .form-side button:focus {
+    outline: none;
+}
+
+.form-deck.with_list .form-side .plus-icon {
+    padding-right: .3em;
+}
+
+.form-deck.with_list .list-side {
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    place-items: center;
+}
+
+.form-deck.with_list .list-side table tr {
+    text-align: center;
+    animation: show-element .5s forwards;
+}
+
+.form-deck.with_list .list-side table th {
+    padding: .5em 5em;
+    border-top: 1px solid rgb(78, 60, 216);
+    border-bottom: 1px solid rgb(78, 60, 216);
+    color: #8C11C5;
+}
+
+.form-deck.with_list .list-side table td {
+    padding: .5em 3em;
+    border-bottom: 1px solid rgb(78, 60, 216);
+}
+
+.form-deck.with_list .list-side table .actions-cell {
+    display: flex;
+    justify-content: space-between;
+}
+
+#formation-item-remove,
+#experience-item-remove {
+    color: rgb(226, 111, 111);
+    cursor: pointer;
+    transition: all .5s ease-in;
+}
+
+#formation-item-remove:hover,
+#experience-item-remove:hover {
+    color: whitesmoke;
+    background-color: rgb(226, 111, 111);
+}
+
+.action {
+    margin-top: 1em;
+    margin-bottom: 5em;
+    text-align: center;
+}
+
+.action button {
+    border: none;
+    color: rgb(78, 60, 216);
+    padding: .3em 1.5em;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: -3px -3px 7px #a7a6a673, 3px 3px 5px rgba(94, 104, 121, .288);
+    transition: all .5s ease-in ;
+    margin-top: 3em;
+}
+
+.action button:hover {
+    border: none;
+    color: white;
+    background-color: rgb(78, 60, 216);
+}
+
+.action button:focus {
+    outline: none;
+}
+
+@keyframes show-element {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

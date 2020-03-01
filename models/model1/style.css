@@ -1,0 +1,202 @@
+@font-face {
+    src: url('../../assets/fonts/Montserrat-Regular.ttf');
+    font-family: "Montserrat";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+body::-webkit-scrollbar {
+    width: .8vw;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #E0E0E0;
+}
+   
+body::-webkit-scrollbar-thumb {
+    background: rgba(9, 9, 9, 66%); 
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.informations h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.informations p {
+    text-align: center;
+    margin: 0 auto;
+    font-size: .8rem;
+    font-weight: bolder;
+    line-height: 2em;
+}
+
+.informations #client-email,
+.informations #client-phone,
+.informations #client-website {
+    font-weight: normal;
+    padding-left: .3em;
+}
+
+.informations .separator {
+    padding-right: .8em;
+    padding-left: .8em;
+}
+
+.informations a {
+    color: black;
+}
+
+.expiriences {
+    padding-top: 2em;
+}
+
+.expiriences h3 {
+    text-align: center;
+    border-bottom: 2px solid rgb(180, 180, 180);
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: .4em;
+}
+
+.expiriences .experience {
+    padding-top: 1em;
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+}
+
+.expiriences .experience .place {
+    grid-area: 1 / 1 / 2 / 2;
+    padding-left: 15em;
+    font-weight: bold;
+    padding-bottom: 1em;
+    font-size: 1.2rem;
+}
+
+.expiriences .experience .date {
+    grid-area: 1 / 2 / 2 / 3;
+    padding-left: 15em;
+    font-weight: bold;
+}
+
+.expiriences .experience .center {
+    grid-area: 2 / 1 / 3 / 2;
+    padding-left: 22em;
+    font-style: italic;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.skills {
+    padding-top: 2em;
+}
+
+.skills h3 {
+    text-align: center;
+    border-bottom: 2px solid rgb(180, 180, 180);
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: .4em;
+}
+
+.skills ul {
+    padding-top: 1em;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.skills li {
+    padding-left: 22em;
+    padding-bottom: .5em;
+}
+
+.formations {
+    padding-top: 2em;
+}
+
+.formations h3 {
+    text-align: center;
+    border-bottom: 2px solid rgb(180, 180, 180);
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: .4em;
+}
+
+.formations .formation {
+    padding-top: 1em;
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+}
+
+.formations .formation .type {
+    grid-area: 1 / 1 / 2 / 2;
+    padding-left: 15em;
+    font-weight: bold;
+    padding-bottom: 2.5em;
+    font-size: 1.2rem;
+}
+
+.formations .formation .date {
+    grid-area: 1 / 2 / 2 / 3;
+    padding-left: 16em;
+    font-weight: bold;
+}
+
+.formations .formation .place {
+    grid-area: 2 / 1 / 3 / 2;
+    padding-left: 22.5em;
+    font-style: italic;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.hobbies h3 {
+    text-align: center;
+    border-bottom: 2px solid rgb(180, 180, 180);
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: .4em;
+}
+
+.hobbies ul {
+    padding-top: 1em;
+    font-size: .8em;
+    font-weight: bold;
+    display: flex;
+}
+
+.hobbies li {
+    padding-left: 22em;
+    padding-bottom: .5em;
+    display: flex;
+    align-items: center;
+    
+}
+
+.hobbies .title {
+    padding-top: .3em;
+    padding-left: .3em;
+}
+
+.hobbies .bullet {
+    font-size: 2rem;
+}
