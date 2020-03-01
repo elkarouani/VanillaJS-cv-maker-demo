@@ -11,7 +11,7 @@ let main_store = new Store();
 // Applying Dom Dispatcher for HtML elements with events listeners
 domDispatcher([
 	{
-		// HTML Element : HTML Input with id 'app'
+		// HTML Element : HTML Element with id 'app'
 		// Event Description: If user type on [ctrl + shift], and set the correct password,
 		// 					he will enter the secret test engine, and if he the user choose to start the test engine
 		// 					all the tests methods will be lanched and the a result will be displayed
